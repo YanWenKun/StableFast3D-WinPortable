@@ -1,0 +1,35 @@
+name: "Build & Upload Package"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_upload:
+    permissions:
+        contents: "write"
+        packages: "write"
+        pull-requests: "read"
+    runs-on: windows-latest
+    steps:
+        - uses: actions/checkout@v4
+
+        - name: Stage 1 Build
+          shell: bash
+          run: bash build.sh
+
+        - name: Stage 2 Compress
+          shell: cmd
+          run: |
+            "C:\Program Files\7-Zip\7z.exe" a -t7z -m0=lzma2 -mx=3 -mfb=32 -md=4m -ms=on -mf=BCJ2 -v2140000000b SF3D.7z SF3D
+
+        - name: Upload archive to release
+          uses: xresloader/upload-to-github-release@v1
+          env:
+            # This is a always-on token when you run GitHub Actions
+            # You don't need to cofigure it
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            file: "SF3D.7z*"
+            # always draft before release
+            draft: true
+            overwrite: true
