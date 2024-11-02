@@ -1,0 +1,14 @@
+huggingface_hub[hf_transfer]
+
+einops==0.8.0
+jaxtyping==0.2.34
+omegaconf==2.3.0
+transformers==4.46.1
+open_clip_torch==2.29.0
+trimesh==4.5.1
+numpy==1.26.4
+
+rembg[gpu]==2.0.59
+rembg==2.0.59
+
+gpytoolbox==0.3.2
