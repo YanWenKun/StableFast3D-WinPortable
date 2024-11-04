@@ -13,11 +13,9 @@ official ComfyUI workflow.
 1. You need an NVIDIA GPU with at least 8GB VRAM.
 
 2. Install
-https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022].
-Check the
-"Linux and embedded development with C++"
-workload, uncheck every Optional items.
-This would minimize installation.
+https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022]
+with "Desktop development with C++" workload.
+Its C＋＋ build tools will be needed (for some JIT code).
 
 ** If you already installed other C++ workload, just skip this step.
 

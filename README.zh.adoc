@@ -11,10 +11,11 @@ https://github.com/Stability-AI/stable-fast-3d[Stable Fast 3D]
 1. 需要 NVIDIA GPU，至少 8GB 显存。
 
 2. 安装
-https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022]，
-安装时选择“单个组件”，搜索并勾选“C++ 核心功能”，其他一概不需要。
+https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022]
+（选择安装“桌面C++开发”），其他版本 VS + CPP 亦可。
+因 3D 工作流需要 JIT 编译 PyTorch C＋＋ 扩展，所以需要安装编译工具。
 
-** 如果你已经安装了 VS C++ 工作负载，略过此步骤。
+** 如果你已经安装了其他 VS C++ 工作负载，略过此步骤。
 
 3. 安装
 https://developer.nvidia.com/cuda-12-4-1-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network[CUDA Toolkit]，
