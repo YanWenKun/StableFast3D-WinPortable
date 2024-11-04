@@ -6,7 +6,7 @@ image::docs/screenshot.webp["Screenshot"]
 
 A dedicated package for running
 https://github.com/Stability-AI/stable-fast-3d[Stable Fast 3D]
-official ComfyUI workflow.
+official ComfyUI workflow on Windows.
 
 ## How to use
 

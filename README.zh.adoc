@@ -2,7 +2,7 @@
 
 image::docs/screenshot.webp["Screenshot"]
 
-一个专门用来运行
+一个专门用来在 Windows 下运行
 https://github.com/Stability-AI/stable-fast-3d[Stable Fast 3D]
 官方 ComfyUI 工作流的整合包。
 
@@ -11,8 +11,8 @@ https://github.com/Stability-AI/stable-fast-3d[Stable Fast 3D]
 1. 需要 NVIDIA GPU，至少 8GB 显存。
 
 2. 安装
-https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022]
-（选择安装“桌面C++开发”），其他版本 VS + CPP 亦可。
+https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022]，
+选择安装“桌面C++开发”。
 因 3D 工作流需要 JIT 编译 PyTorch C＋＋ 扩展，所以需要安装编译工具。
 
 ** 如果你已经安装了其他 VS C++ 工作负载，略过此步骤。
