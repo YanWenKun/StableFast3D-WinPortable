@@ -12,12 +12,18 @@ official ComfyUI workflow on Windows.
 
 1. You need an NVIDIA GPU with at least 8GB VRAM.
 
-2. Install
-https://visualstudio.microsoft.com/downloads/?q=build+tools[Visual Studio Build Tools 2022]
-with "Desktop development with C++" workload.
-Its C＋＋ build tools will be needed (for some JIT code).
+2. Install Visual Studio Build Tools 2022
+(
+https://visualstudio.microsoft.com/downloads/?q=build+tools[Page]
+|
+https://aka.ms/vs/17/release/vs_BuildTools.exe[EXE]
+).
+During the setup, select "Desktop development with C++" workload.
+You only need these two optional components:
 
-** If you already installed other C++ workload, just skip this step.
+** MSVC Build Tools (compilers and libraries)
+** CMake for C++ on Windows
+** Some PyTorch extension code needs to be compiled during runtime, so the build tools are needed. If you already installed Visual Studio with C++ workload, just skip this step.
 
 3. Install
 https://developer.nvidia.com/cuda-12-4-1-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network[CUDA Toolkit],
