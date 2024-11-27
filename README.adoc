@@ -23,13 +23,13 @@ You only need these two optional components:
 
 ** MSVC Build Tools (compilers and libraries)
 ** CMake for C++ on Windows
-** Some PyTorch extension code needs to be compiled during runtime, so the build tools are needed. If you already installed Visual Studio with C++ workload, just skip this step.
+** If you already installed Visual Studio with C++ workload, just skip this step. (Some PyTorch extension code needs to be compiled during runtime, so the build tools are needed.)
 
 3. Install
-https://developer.nvidia.com/cuda-12-4-1-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network[CUDA Toolkit],
+https://developer.nvidia.com/cuda-12-4-1-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network[CUDA Toolkit]
 with version no later than 12.4.1.
 You only need to install
-https://github.com/YanWenKun/ComfyUI-Windows-Portable/raw/refs/heads/main/docs/cuda-toolkit-install-selection.webp[Libraries and Compilers].
+link:docs/cuda-toolkit-install-selection.webp[Libraries and Compilers].
 
 4. On Hugging Face:
 
@@ -59,12 +59,14 @@ with the read-only access token you just created in step 4.
 ** `stable-fast-3d`
 
 8. Run `run.bat`.
-** When start complete, it will auto launch browser and visit http://localhost:8188/
+** When start complete, it will auto open http://localhost:8188/ in browser.
 
 9. In the left side bar, find the workflow, open it, and click "**Queue**" button in the bottom-center of the page.
 
 image::docs/select_workflow.webp["Select Workflow"]
 
+## File Location
+
 The output files will be saved in `ComfyUI\output`.
 
-The example input files are in `ComfyUI\input`.
+The input files (examples) are in `ComfyUI\input`.
