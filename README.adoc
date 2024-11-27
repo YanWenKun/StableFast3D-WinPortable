@@ -29,7 +29,7 @@ You only need these two optional components:
 https://developer.nvidia.com/cuda-12-4-1-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network[CUDA Toolkit]
 with version no later than 12.4.1.
 You only need to install
-link:docs/cuda-toolkit-install-selection.webp[Libraries and Compilers].
+https://github.com/YanWenKun/StableFast3D-WinPortable/raw/refs/heads/main/docs/cuda-toolkit-install-selection.webp[Libraries and Compilers].
 
 4. On Hugging Face:
 

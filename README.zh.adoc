@@ -26,7 +26,7 @@ https://aka.ms/vs/17/release/vs_BuildTools.exe[安装程序]
 https://developer.nvidia.com/cuda-12-4-1-download-archive?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_network[CUDA Toolkit]，
 版本不新于 12.4.1，再高会有兼容性问题。
 安装时只需要勾选
-link:docs/cuda-toolkit-install-selection.webp[Libraries 以及 Compilers]
+https://github.com/YanWenKun/StableFast3D-WinPortable/raw/refs/heads/main/docs/cuda-toolkit-install-selection.webp[Libraries 以及 Compilers]
 。
 
 4. Hugging Face 相关：
