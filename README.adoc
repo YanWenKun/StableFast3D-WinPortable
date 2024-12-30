@@ -8,6 +8,11 @@ A dedicated package for running
 https://github.com/Stability-AI/stable-fast-3d[Stable Fast 3D]
 official ComfyUI workflow on Windows.
 
+Update: This repo has been merged into
+https://github.com/YanWenKun/Comfy3D-WinPortable/releases/tag/r6-pt25[Comfy3D-WinPortable], 
+a more comprehensive package.
+However, StableFast3D-WinPortable is more concise and still works.
+
 ## How to use
 
 1. You need an NVIDIA GPU with at least 8GB VRAM.

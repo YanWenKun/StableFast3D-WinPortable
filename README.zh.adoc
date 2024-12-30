@@ -6,6 +6,11 @@ image::docs/screenshot.webp["Screenshot"]
 https://github.com/Stability-AI/stable-fast-3d[Stable Fast 3D]
 官方 ComfyUI 工作流的整合包。
 
+更新：本项目已与
+https://github.com/YanWenKun/Comfy3D-WinPortable/releases/tag/r6-pt25[Comfy3D-WinPortable]
+合并，后者有着更全面的功能。
+本项目依然可以正常运行。
+
 ## 使用步骤
 
 1. 需要 NVIDIA GPU，至少 8GB 显存。
