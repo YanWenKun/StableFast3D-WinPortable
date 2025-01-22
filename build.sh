@@ -18,7 +18,7 @@ export PIP_INDEX_URL="https://pypi.org/simple"
 ls -lahF
 
 # Setup Python embeded
-curl https://www.python.org/ftp/python/3.12.7/python-3.12.7-embed-amd64.zip \
+curl https://www.python.org/ftp/python/3.12.8/python-3.12.8-embed-amd64.zip \
     -o python_embeded.zip
 unzip python_embeded.zip -d "$workdir"/python_embeded
 
@@ -34,16 +34,15 @@ $pip_exe install \
     --upgrade pip wheel setuptools
 
 $pip_exe install \
-    xformers==0.0.28.post3 torch==2.5.1 torchvision torchaudio \
+    xformers==0.0.29.post1 torch==2.5.1 torchvision torchaudio \
     --index-url https://download.pytorch.org/whl/cu124 \
     --extra-index-url $PIP_INDEX_URL
 
 $pip_exe install -r https://github.com/comfyanonymous/ComfyUI/raw/refs/heads/master/requirements.txt
 
 $pip_exe install \
-https://github.com/YanWenKun/ComfyUI-Windows-Portable/releases/download/v6.2-wheels/pynim-0.0.3-cp312-abi3-win_amd64.whl \
-https://github.com/YanWenKun/ComfyUI-Windows-Portable/releases/download/v6.2-wheels/texture_baker-0.0.1-cp312-cp312-win_amd64.whl \
-https://github.com/YanWenKun/ComfyUI-Windows-Portable/releases/download/v6.2-wheels/uv_unwrapper-0.0.1-cp312-cp312-win_amd64.whl
+https://github.com/YanWenKun/Comfy3D-WinPortable/releases/download/r7-wheels/texture_baker-0.0.1-cp312-cp312-win_amd64.whl \
+https://github.com/YanWenKun/Comfy3D-WinPortable/releases/download/r7-wheels/uv_unwrapper-0.0.1-cp312-cp312-win_amd64.whl
 
 $pip_exe install -r "$workdir"/requirements.txt
 

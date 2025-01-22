@@ -12,3 +12,4 @@ rembg[gpu]==2.0.59
 rembg==2.0.59
 
 gpytoolbox==0.3.2
+pynanoinstantmeshes==0.0.3
