@@ -2,11 +2,6 @@
 @REM https://huggingface.co/settings/tokens/new?tokenType=read
 set HF_TOKEN=hf_your_token
 
-@REM This command enables experimental library for high-speed file transfers.
-@REM Remove it if you got errors/freezing whilie downloading.
-@REM https://huggingface.co/docs/huggingface_hub/guides/download#faster-downloads
-set HF_HUB_ENABLE_HF_TRANSFER=1
-
 @REM This command redirects HuggingFace-Hub to download model files in this folder.
 set HF_HUB_CACHE=%~dp0\HuggingFaceHub
 

@@ -2,11 +2,6 @@
 @REM https://huggingface.co/settings/tokens/new?tokenType=read
 set HF_TOKEN=hf_your_token
 
-@REM 该命令启用实验性的高速传输库，
-@REM 如果下载遇到卡死问题，将该行删除。
-@REM https://huggingface.co/docs/huggingface_hub/guides/download#faster-downloads
-set HF_HUB_ENABLE_HF_TRANSFER=1
-
 @REM 使用国内的 HuggingFace 镜像。
 set HF_ENDPOINT=https://hf-mirror.com
 
