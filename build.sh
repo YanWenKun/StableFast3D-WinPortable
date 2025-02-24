@@ -28,8 +28,8 @@ $pip_exe install \
     --upgrade pip wheel setuptools
 
 $pip_exe install \
-    xformers==0.0.29.post1 torch==2.5.1 torchvision torchaudio \
-    --index-url https://download.pytorch.org/whl/cu124 \
+    xformers==0.0.29.post3 torch==2.6.0 torchvision torchaudio \
+    --index-url https://download.pytorch.org/whl/cu126 \
     --extra-index-url $PIP_INDEX_URL
 
 $pip_exe install -r https://github.com/comfyanonymous/ComfyUI/raw/refs/heads/master/requirements.txt
