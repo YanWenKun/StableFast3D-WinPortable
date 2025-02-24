@@ -15,6 +15,6 @@ set HF_HUB_CACHE=%~dp0\HuggingFaceHub
 set PYTHONPYCACHEPREFIX=%~dp0\pycache
 
 @REM 如果不想要 ComfyUI 启动后自动打开浏览器，添加" --disable-auto-launch"（不含引号）到下行末尾。
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build
+.\python_standalone\python.exe -s ComfyUI\main.py --windows-standalone-build
 
 pause

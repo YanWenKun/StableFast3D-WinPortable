@@ -2,14 +2,12 @@
 set -eux
 
 git config --global core.autocrlf true
-
 gcs='git clone --depth=1 --no-tags --recurse-submodules --shallow-submodules'
-
 workdir=$(pwd)
-
-pip_exe="${workdir}/python_embeded/python.exe -s -m pip"
-
+pip_exe="${workdir}/python_standalone/python.exe -s -m pip"
 export PYTHONPYCACHEPREFIX="$workdir"/pycache
+export PATH="$PATH:$workdir/python_standalone/Scripts"
+export PIP_NO_WARN_SCRIPT_LOCATION=0
 
 # Replace URL if you need to use PIP mirror site
 # 使用国内源下载，替换为 https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
@@ -17,17 +15,13 @@ export PIP_INDEX_URL="https://pypi.org/simple"
 
 ls -lahF
 
-# Setup Python embeded
-curl https://www.python.org/ftp/python/3.12.8/python-3.12.8-embed-amd64.zip \
-    -o python_embeded.zip
-unzip python_embeded.zip -d "$workdir"/python_embeded
-
-cd "$workdir"/python_embeded
-sed -i '1i../ComfyUI' ./python312._pth
-sed -i 's/^#import site/import site/' ./python312._pth
-
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-./python.exe -s get-pip.py
+# Download Python Standalone
+cd "$workdir"
+curl -sSL \
+https://github.com/astral-sh/python-build-standalone/releases/download/20250212/cpython-3.12.9+20250212-x86_64-pc-windows-msvc-shared-install_only.tar.gz \
+    -o python.tar.gz
+tar -zxf python.tar.gz
+mv python python_standalone
 
 # PIP installs
 $pip_exe install \
@@ -55,7 +49,7 @@ cd "$workdir"
 
 mkdir SF3D
 
-mv python_embeded SF3D/
+mv python_standalone SF3D/
 
 cd SF3D
 

@@ -9,6 +9,6 @@ set HF_HUB_CACHE=%~dp0\HuggingFaceHub
 set PYTHONPYCACHEPREFIX=%~dp0\pycache
 
 @REM If you don't want the browser to open automatically, add " --disable-auto-launch" (without quotation marks) to the end of the line below.
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build
+.\python_standalone\python.exe -s ComfyUI\main.py --windows-standalone-build
 
 pause
